@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+	<head>
+		<title>vidya solars</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	
+    	<style>
+    		
+    		*{margin:0px;}
+    		
+    		.timeline{
+    			background-color: #76ff03 ;
+
+    			padding-top: 15px;
+    			padding-bottom: 15px;
+    			font-weight: bold;
+    		}
+    		.timline p{
+    			padding-top: 10px; 
+    		}
+
+			.navbar{
+				min-height:100px;
+			}
+
+			.background{
+				background:#b3e5fc;
+			}
+
+
+
+			.col-sm-4{padding-top: 20px;padding-bottom: 20px;}
+
+			.headings::after{
+				content:'';
+				background: yellow;
+				display: block;
+				height: 5px;
+				width: 170px;
+				margin: 20px auto 5px;
+			}
+
+			.clients-desc{
+				text-align: center;
+				font-style: italic;
+			}
+
+			.clients-name{
+				text-align: center;
+				font-style:italic; 
+			}
+
+			.social-links{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.social-links a{
+				margin: 15px;
+			}
+
+			footer{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			#s1:hover,#s1:active{
+				background-color: #3b5998; 
+			}
+
+			#s2:hover,#s2:active{
+				background-color:#e4405f; 
+			}
+
+			#s3:hover,#s3:active{
+				background-color:#0077B5; 
+			}
+
+			#banner-slide{
+				height: 100vh;
+				width: 100%;
+				position: relative;
+			}
+
+			#banner-slide .carousel-inner{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: #000;
+			}
+
+			
+
+			#banner-slide .carousel-inner .carousel-item{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/1.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#banner-slide .carousel-inner .carousel-item:nth-child(2){
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/2.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#banner-slide .carousel-inner .carousel-item .info{
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				height: auto;
+				width: 100%;
+				z-index: 1;
+				text-align: center;
+			}
+
+			#banner-slide .carousel-inner .carousel-item h1{
+				color: #fff;
+				height: auto;
+				width: 100%;
+				z-index: 1;
+				text-align: center;
+				font-size: 5.5em;
+				font-weight: 500;
+			}
+
+			#banner-slide .carousel-inner .carousel-item p{
+				color: black;
+				height: auto;
+				width: 100%;
+				z-index: 1;
+				text-align: center;
+				font-size: 1.2em;
+				font-weight: 500;
+			}
+
+			.maps{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			iframe{
+				align-self: center;
+				flex-basis: 70%;
+			}
+
+			.img-wrap{width:100%;}
+			.img-wrap img{width: 100%;padding: 10px;border-radius:50%;box-shadow: 0 0 10px #999999}
+
+			#product-slide1,#product-slide2,#product-slide3{
+				height: 30vh;
+				width: 100%;
+				position: relative;
+			}
+
+			#product-slide1 .carousel-inner{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: #000;
+			}
+
+			#product-slide2 .carousel-inner{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: #000;
+			}
+
+			#product-slide3 .carousel-inner{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: #000;
+			}
+
+			
+
+			#product-slide1 .carousel-inner .carousel-item{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/1.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#product-slide1 .carousel-inner .carousel-item:nth-child(2){
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/2.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#product-slide1 .carousel-inner .carousel-item:nth-child(3){
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/5.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+
+
+
+			#product-slide2 .carousel-inner .carousel-item{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/1.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#product-slide2 .carousel-inner .carousel-item:nth-child(2){
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/2.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#product-slide2 .carousel-inner .carousel-item:nth-child(3){
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/5.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+
+			#product-slide3 .carousel-inner .carousel-item{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/1.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#product-slide3 .carousel-inner .carousel-item:nth-child(2){
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/2.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			#product-slide3 .carousel-inner .carousel-item:nth-child(3){
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background: url('assets/5.jpg');
+				background-size:cover;
+				background-position: center; 
+			}
+
+			.parent{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.col{
+			display: flex;
+			flex-direction: column;
+			align-items:center;
+		}
+
+
+
+</style>
+	
+	</head>
+	<body class="background">
+		<div class="container-fluid">
+			<div class="row">
+<!-----------------------------------------------------------------navigation------------------------------------------------------------------>
+				<div class="col-sm-12 navbar navbar-expand-lg sticky-top navbar-light" style="background:#81d4fa">
+  					<a class="navbar-brand" href="#"><img src="assets/logo.jpg" style="padding-left: 20px" class="d-inline-block align-top" width="100%" alt=""></a>
+  					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    					<span class="navbar-toggler-icon"></span>
+  					</button>
+  					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+    					<ul class="navbar-nav ml-auto">
+      						<li class="nav-item">
+        						<a class="nav-link" href="#">Home</a>
+      						</li>
+      						<li class="nav-item">
+       							<a class="nav-link" href="#about">About Us</a>
+     						</li>
+      						<li class="nav-item">
+        						<a class="nav-link" href="#services">Services</a>
+      						</li>
+      						<li class="nav-item">
+        						<a class="nav-link" href="#projects">Projects</a>
+      						</li>
+      						<li class="nav-item">
+        						<a class="nav-link" href="#contact">Contact</a>
+      						</li>
+    					</ul>
+  					</div>
+				</div>
+<!---------------------------------------------------------------banner-slide------------------------------------------------------------------>
+			<div class='w-100'></div>
+			<div id="banner-slide" class="carousel slide carousel-fade" data-ride="carousel">
+				<ol class="carousel-indicators indicators">
+					<li data-target="#banner-slide" data-slide-to='0' class="active"></li>
+					<li data-target="#banner-slide" data-slide-to='1'></li>
+				</ol>
+  				<div class="carousel-inner">
+    				<div class="carousel-item active">
+    				<div class="info">
+    					<h1>BANNER 1</h1>
+    					<p>this is banner one</p>
+    				</div>
+        			</div>
+        			<div class="carousel-item">
+        			<div class="info">
+        				<h1>BANNER 2</h1>
+        				<p>this is banner two</p>
+        			</div>
+        			</div>
+  				</div>
+			</div>
+<!------------------------------------------------------------------aboutus------------------------------------------------------------------>
+			<div class="w-100" id="about"></div>
+			<div class="col-sm-12">
+				<br><br>
+				<h4 class="display-4 headings text-center">ABOUT US</h4>
+				<div class="container">
+				<div class="row">
+				<div class="col-sm-5">
+					<div class="img-wrap">
+						<img src="assets/4.jpg">
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<p class="lead text-left" style="padding:30px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dictum nisl, eu condimentum libero. Cras tincidunt tortor nibh, sit amet faucibus mauris lobortis eu. Nunc ultrices nisl malesuada nibh pharetra mollis. Aliquam erat volutpat. Aliquam pellentesque auctor nisi, in dapibus nulla vulputate a. Integer fringilla dapibus efficitur. Pellentesque in nibh odio. Cras ac leo sed justo posuere imperdiet eu a nisl. Vestibulum a augue tellus. Sed nec lacus bibendum, scelerisque dolor nec, lacinia nisi. Mauris eu lectus ut lectus imperdiet pellentesque. Etiam sed eros sit amet nisl imperdiet ultricies. Nam justo tellus, efficitur a convallis ultricies, sagittis at lorem.
+					</p>
+				</div>	
+				</div>
+				</div>
+			</div>
+<!------------------------------------------------------------------why us--------------------------------------------------->
+			<div class="w-100"></div>
+			<div class="col-sm-12 text-center">
+				<br><br>
+				<h4 class="display-4 headings">WHY US</h4>
+				<br>
+				<p class="lead">VIDYA SOLARS assures you of a simple and transparent solar journey by systematically managing each and every step! From top of the line</p>
+				<p class="lead">components to quality workmanship, VIDYA SOLARS is committed to delivering you an un-matched EXPERIENCE and complete peace of mind.</p>
+				<br>
+				<div class="parent">
+					<div class="col">
+						<img src="assets/1.png">
+						<h4>One Stop Solution</h4>
+						<p>Your worries end here! VIDYA SOLARS shall<br>take on end-to-end responsibility.<br>The right design, designed right! </p>
+					</div>
+					<div class="col">
+						<img src="assets/2.png">
+						<h4>Best Quality</h4>
+						<p>Our robust processes and systems<br>ensure that your Solar Rooftop Solution<br>is of top-notch quality!</p>
+					</div>
+					<div class="col">
+						<img src="assets/3.png">
+						<h4>Life Time Support</h4>
+						<p>From Site Surveys & Project<br>Management to Post Installation<br>requirements. We are always there!</p>
+					</div>
+				</div>
+			</div>
+<!------------------------------------------------------------------timeline------------------------------------------------------------------>
+			<div class="w-100 text-center"></div>
+			<div class="col-sm-12">
+				<br><br>
+			<div class="container-fluid">
+			<div class="row row-cols-2">
+			<div class="col timeline text-center">
+				<p style="font-size: 3.5em">2015</p>
+				<h5>SINCE</h5>
+			</div>
+			<div class="col timeline text-center">
+				<p style="font-size: 3.5em">10</p>
+				<h5>TEAM</h5>
+			</div>
+			<div class="col timeline text-center">
+				<p style="font-size: 3.5em">100+</p>
+				<h5>PROJECTS</h5>
+			</div>
+			<div class="col timeline text-center">
+				<p style="font-size: 3.5em">100+</p>
+				<h5>CLIENTS</h5>
+			</div>
+			</div>
+		</div>
+		</div>
+<!------------------------------------------------------------------services------------------------------------------------------------------>
+			<div class="w-100" id="services"></div>
+			<div class='col-sm-12 text-center'>
+				<br><br>
+				<h4 class="display-4 headings">SERVICES</h4>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="card" style="max-width: 26rem;">
+  								<img src="assets/5.jpg" class="card-img-top" alt="...">
+  								<div class="card-body">
+    								<h5 class="card-title">SERVICE 1</h5>
+    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card" style="max-width: 26rem;">
+  								<img src="assets/5.jpg" class="card-img-top" alt="...">
+  								<div class="card-body">
+    								<h5 class="card-title">SERVICE 2</h5>
+    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card" style="max-width: 26rem;">
+  								<img src="assets/5.jpg" class="card-img-top" alt="...">
+  								<div class="card-body">
+    								<h5 class="card-title">SERVICE 3</h5>
+    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+<!------------------------------------------------------------------products------------------------------------------------------------------>
+			<div class="w-100"></div>
+			<div class="col-sm-12 text-center">
+				<br><br>
+				<h4 class="display-4 headings">PRODUCTS</h4><br>
+				<p class="lead">We have a vast experience as a leading power solutions specialist. Our expertise includes best components of Solar Power System.</p>	
+				<div class="container">
+				<div class="row">
+				<div class="col-sm-4">
+					<div id="product-slide1" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#product-slide1" data-slide-to="0" class="active"></li>
+					    <li data-target="#product-slide1" data-slide-to="1"></li>
+					    <li data-target="#product-slide1" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      
+					    </div>
+					    <div class="carousel-item">
+					      
+					    </div>
+					    <div class="carousel-item">
+					      
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#product-slide1" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true">
+					    <span class="sr-only">Previous
+					  </a>
+					  <a class="carousel-control-next" href="#product-slide1" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true">
+					    <span class="sr-only">Next
+					  </a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div id="product-slide2" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#product-slide2" data-slide-to="0" class="active"></li>
+					    <li data-target="#product-slide2" data-slide-to="1"></li>
+					    <li data-target="#product-slide2" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      
+					    </div>
+					    <div class="carousel-item">
+					      
+					    </div>
+					    <div class="carousel-item">
+					      
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#product-slide2" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true">
+					    <span class="sr-only">Previous
+					  </a>
+					  <a class="carousel-control-next" href="#product-slide2" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true">
+					    <span class="sr-only">Next
+					  </a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div id="product-slide3" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#product-slide3" data-slide-to="0" class="active"></li>
+					    <li data-target="#product-slide3" data-slide-to="1"></li>
+					    <li data-target="#product-slide3" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      
+					    </div>
+					    <div class="carousel-item">
+					      
+					    </div>
+					    <div class="carousel-item">
+					      
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#product-slide3" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true">
+					    <span class="sr-only">Previous
+					  </a>
+					  <a class="carousel-control-next" href="#product-slide3" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true">
+					    <span class="sr-only">Next
+					  </a>
+					</div>
+				</div>
+			</div>
+		</div>
+			</div>	
+<!------------------------------------------------------------------projects------------------------------------------------------------------>
+			<div class="w-100"></div>
+			<div class="col-sm-12 text-center">
+				<br><br>
+				<h4 class="display-4 headings">PROJECTS</h4>
+				<br>
+			<div id="project-slide" class="carousel slide carousel-fade" data-ride="carousel" style="background-color: yellow;">
+				<ol class="carousel-indicators indicators">
+					<li data-target="#project-slide" data-slide-to='0' class="active"></li>
+				</ol>
+  				<div class="carousel-inner">
+    				<div class="carousel-item active">
+        				<img src="assets/1.jpg" class="d-block w-100 nav-img" alt="...">
+    				</div>
+  				</div>
+  					<a class="carousel-control-prev" href="#client-slide" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true">
+					    <span class="sr-only">Previous
+					 </a>
+					 <a class="carousel-control-next" href="#client-slide" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true">
+					    <span class="sr-only">Next
+					</a>
+			</div>
+			<br>
+			</div>
+<!------------------------------------------------------------------clients------------------------------------------------------------------->
+			<div class="w-100"></div>
+			<div class="col-sm-12 text-center clients">
+				<br><br>
+				<h4 class="display-4 headings">CLIENTS</h4>
+				<br>
+				<div id="client-slide" class="carousel slide carousel-fade" data-ride="carousel">
+					<ol class="carousel-indicators indicators">
+						<li data-target="#client-slide" data-slide-to='0' class="active"></li>
+					</ol>
+  				
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<p class="clients-desc">it is very great company in kota excellent services </p><br>
+							<img src="assets/4.jpg" class="border border-primary rounded-circle mx-auto d-block" width="100" alt='clients-image' style="padding: 1px; border: 2px solid green"><br>
+							<h5 class="clients-name display-5">RAMAN</h5>
+						</div>
+						<br>
+					</div>
+					<br><br>
+					<a class="carousel-control-prev" href="#client-slide" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true">
+					    <span class="sr-only">Previous
+					 </a>
+					 <a class="carousel-control-next" href="#client-slide" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true">
+					    <span class="sr-only">Next
+					 </a>
+					</div>
+  				</div>
+<!------------------------------------------------------------------contact------------------------------------------------------------------->
+			<div class="w-100" id="contact"></div>
+			<div class="col-sm-12">
+				<div class="container h-50">
+					<br><br>
+				<h4 class="display-4 text-center headings">CONTACT</h4>
+				<br>
+							<div class="maps">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.385748753088!2d75.83173581449913!3d25.15644958391515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f84c91a921501%3A0x4ccc8d0e75bffcce!2sDadabari%20Extension%2C%20Dadabari%2C%20Kota%2C%20Rajasthan%20324009!5e0!3m2!1sen!2sin!4v1587356796193!5m2!1sen!2sin"></iframe>
+  							</div>
+  						</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="col-sm-6 address text-center">
+				<br><br>
+				<div class="container">
+				<h4 class="headings">Address</h4>
+				<p class="lead">A108 Adam street<br>
+					NY 535022, USA</p>
+				<p class="lead"><strong>Tel: </strong>123-4567-890</p>
+				<p class="lead"><strong>Email: </strong>vidyasolars@xyz.com</p>
+			</div>
+		</div>
+		<div class="col-sm-6 contact-form">
+			<br><br>
+				<div class="container">
+				<form action="" name="myform" method="post" onsubmit="return validateForm()">
+				<div class="form-row">
+					<div class="form-group col-sm-8">
+						<h4 class="headings text-center">Request a Call Back</h4>
+					</div>	
+					<div class="w-100"></div>
+					<div class="form-group col-sm-8">                                           
+						<input type="text" class="form-control" placeholder="Full Name (required)" name="name">
+					</div>
+					<div class="w-100"></div>
+<<<<<<< HEAD
+					<div class="form-group col-sm-8">                                           
+						<input type="email" class="form-control" placeholder="Email" name="email"> 
+=======
+					<div class="form-group col-sm-8">
+						<input type="email" class="form-control" placeholder="Email"> 
+>>>>>>> 9f1e64a5918f7fb36c8be2de23b4cbf56298ef95
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-8">                                           
+						<input type="text" class="form-control" placeholder="PhoneNumber (required)" name="phone">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-8 text-center">
+						<button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i>Request
+						</button>
+					</div>
+				</div>
+				</form>
+			</div>
+			</div>
+		<div class="w-100"></div>
+		<div class="col-sm-12">
+			<br>
+			<div class="container social-links">
+				<a href="#" id='s1'><img src="assets/f.svg"></a>
+				<a href="#" id="s2"><img src="assets/i.svg"></a>
+				<a href="#" id="s3"><img src="assets/l.svg"></a>
+			</div>
+			<br>
+		</div>
+<!------------------------------------------------------------------footer-------------------------------------------------------------------->
+			<div class="w-100"></div>
+			<br><br>
+		   <div class="col-sm-12 bg-dark">
+		   <footer>
+		   		<p class="lead" style="color: #ffffff; font-size: 1em; font-family: sans-serif; padding-top: 5px">© 2020 by Vidya Solar Solutions.</p>
+		   		<p class="lead" style="color: #ffffff; font-size: 0.65em; font-family: sans-serif;">Designed and Developed by <a href=""><strong>RAMAN DWIVEDI</strong></a></p>
+		   	</footer>	
+		   </div>
+		</div>	
+
+		<script type="text/javascript">
+			function validateForm(){
+				var name = document.forms["myform"]["name"].value;
+				var phone = document.forms["myform"]["phone"].value;
+				if (name == "" || phone == ""){
+					alert("Name and PhoneNumber must be filled");
+					return false;
+				}
+				else if(phone.length < 10 || phone.length > 10){
+					alert("please enter apropriate phone number")
+				}
+			}
+		</script>
+
+	</body>
+</html
