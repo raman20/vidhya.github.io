@@ -14,8 +14,8 @@
     		*{margin:0px;}
     		
     		.timeline{
-    			background-color:#00e676;
-
+    			background-color:#ffea00;
+    			color:#d50000;
     			padding-top: 15px;
     			padding-bottom: 15px;
     			font-weight: bold;
@@ -24,25 +24,40 @@
     			padding-top: 6.5px; 
     		}
 
+    		.timeline h3{
+    			color: #1e2d3b;
+    		}
+
 			.navbar{
 				min-height:100px;
 			}
 
 			.background{
-				background:#b3e5fc;
+				background:#bbdefb;
 			}
 
 
 
 			.col-sm-4{padding-top: 20px;padding-bottom: 20px;}
 
+			.headings{
+				letter-spacing: 0.1em;
+				font-weight: 550;
+				color: #1E2D3B;
+				font-family: avenir-lt-w01_85-heavy1475544,sans-serif;
+			}
+
 			.headings::after{
 				content:'';
-				background: yellow;
+				background: #01579b;
 				display: block;
 				height: 5px;
 				width: 170px;
 				margin: 20px auto 5px;
+			}
+
+			.clients{
+				background-color: #42a5f5;
 			}
 
 			.clients-desc{
@@ -132,8 +147,8 @@
 				width: 100%;
 				z-index: 1;
 				text-align: center;
-				font-size: 5.5em;
-				font-weight: 500;
+				font-size: 5em;
+				font-weight: 400;
 			}
 
 			#banner-slide .carousel-inner .carousel-item p{
@@ -142,8 +157,8 @@
 				width: 100%;
 				z-index: 1;
 				text-align: center;
-				font-size: 1.2em;
-				font-weight: 500;
+				font-size: 2em;
+				font-weight: 400;
 			}
 
 			.maps{
@@ -285,13 +300,16 @@
 			justify-content: space-around;
 		}
 
-		.col{
+		.col2{
 			display: flex;
 			flex-direction: column;
 			align-items:center;
 		}
 
-
+		.main-p{
+			line-height: 1.7em;
+			font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
+		}
 
 </style>
 	
@@ -300,27 +318,30 @@
 		<div class="container-fluid">
 			<div class="row">
 <!-----------------------------------------------------------------navigation------------------------------------------------------------------>
-				<div class="col-sm-12 navbar navbar-expand-lg sticky-top navbar-light" style="background:#81d4fa">
-  					<a class="navbar-brand" href="#"><img src="assets/logo.jpg" style="padding-left: 20px" class="d-inline-block align-top" width="100%" alt=""></a>
+				<div class="col-sm-12 navbar navbar-expand-lg sticky-top navbar-light" style="background:#42a5f5">
+  					<a class="navbar-brand" href="#"><img src="assets/logo.jpg" style="padding-left: 10px" class="d-inline-block align-top" width="100%" alt=""></a>
   					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     					<span class="navbar-toggler-icon"></span>
   					</button>
   					<div class="collapse navbar-collapse" id="navbarNavDropdown">
     					<ul class="navbar-nav ml-auto">
       						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-        						<a class="nav-link" href="#">Home</a>
+        						<a class="nav-link" href="#">HOME</a>
       						</li>
       						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-       							<a class="nav-link" href="#about">About Us</a>
+       							<a class="nav-link" href="#about">ABOUT US</a>
      						</li>
       						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-        						<a class="nav-link" href="#services">Services</a>
+        						<a class="nav-link" href="#services">SERVICES</a>
       						</li>
       						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-        						<a class="nav-link" href="#projects">Projects</a>
+        						<a class="nav-link" href="#projects">PROJECTS</a>
       						</li>
       						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-        						<a class="nav-link" href="#contact">Contact</a>
+        						<a class="nav-link" href="#projects">PRODUCTS</a>
+      						</li>
+      						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        						<a class="nav-link" href="#contact">CONTACT US</a>
       						</li>
     					</ul>
   					</div>
@@ -351,7 +372,7 @@
 			<div class="w-100" id="about"></div>
 			<div class="col-sm-12">
 				<br><br>
-				<h4 class="display-4 headings text-center">ABOUT US</h4>
+				<h2 class="headings h1 text-center">ABOUT US</h2>
 				<div class="container">
 				<div class="row">
 				<div class="col-sm-5">
@@ -360,7 +381,7 @@
 					</div>
 				</div>
 				<div class="col-sm-7">
-					<p class="lead text-left" style="padding:30px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dictum nisl, eu condimentum libero. Cras tincidunt tortor nibh, sit amet faucibus mauris lobortis eu. Nunc ultrices nisl malesuada nibh pharetra mollis. Aliquam erat volutpat. Aliquam pellentesque auctor nisi, in dapibus nulla vulputate a. Integer fringilla dapibus efficitur. Pellentesque in nibh odio. Cras ac leo sed justo posuere imperdiet eu a nisl. Vestibulum a augue tellus. Sed nec lacus bibendum, scelerisque dolor nec, lacinia nisi. Mauris eu lectus ut lectus imperdiet pellentesque. Etiam sed eros sit amet nisl imperdiet ultricies. Nam justo tellus, efficitur a convallis ultricies, sagittis at lorem.
+					<p class="text-left main-p" style="padding:30px; line-height: 2.5em"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dictum nisl, eu condimentum libero. Cras tincidunt tortor nibh, sit amet faucibus mauris lobortis eu. Nunc ultrices nisl malesuada nibh pharetra mollis.
 					</p>
 				</div>	
 				</div>
@@ -370,23 +391,23 @@
 			<div class="w-100"></div>
 			<div class="col-sm-12 text-center">
 				<br><br>
-				<h4 class="display-4 headings">WHY US</h4>
+				<h1 class="headings">WHY US</h1>
 				<br>
-				<p class="lead">VIDYA SOLARS assures you of a simple and transparent solar journey by systematically managing each and every step! From top of the line</p>
-				<p class="lead">components to quality workmanship, VIDYA SOLARS is committed to delivering you an un-matched EXPERIENCE and complete peace of mind.</p>
+				<p class="main-p">VIDYA SOLARS assures you of a simple and transparent solar journey by systematically managing each and every step! From top of the line</p>
+				<p class="main-p">components to quality workmanship, VIDYA SOLARS is committed to delivering you an un-matched EXPERIENCE and complete peace of mind.</p>
 				<br>
 				<div class="parent">
-					<div class="col">
+					<div class="col2">
 						<img src="assets/1.png">
 						<h4>One Stop Solution</h4>
 						<p>Your worries end here! VIDYA SOLARS shall<br>take on end-to-end responsibility.<br>The right design, designed right! </p>
 					</div>
-					<div class="col">
+					<div class="col2">
 						<img src="assets/2.png">
 						<h4>Best Quality</h4>
 						<p>Our robust processes and systems<br>ensure that your Solar Rooftop Solution<br>is of top-notch quality!</p>
 					</div>
-					<div class="col">
+					<div class="col2">
 						<img src="assets/3.png">
 						<h4>Life Time Support</h4>
 						<p>From Site Surveys & Project<br>Management to Post Installation<br>requirements. We are always there!</p>
@@ -401,19 +422,19 @@
 			<div class="row row-cols-2">
 			<div class="col timeline text-center">
 				<p style="font-size: 3.5em">2015</p>
-				<h5>SINCE</h5>
+				<h3>SINCE</h3>
 			</div>
 			<div class="col timeline text-center">
 				<p style="font-size: 3.5em">10</p>
-				<h5>TEAM</h5>
+				<h3>TEAM</h3>
 			</div>
 			<div class="col timeline text-center">
 				<p style="font-size: 3.5em">100+</p>
-				<h5>PROJECTS</h5>
+				<h3>PROJECTS</h3>
 			</div>
 			<div class="col timeline text-center">
 				<p style="font-size: 3.5em">100+</p>
-				<h5>CLIENTS</h5>
+				<h3>CLIENTS</h3>
 			</div>
 			</div>
 		</div>
@@ -422,34 +443,45 @@
 			<div class="w-100" id="services"></div>
 			<div class='col-sm-12 text-center'>
 				<br><br>
-				<h4 class="display-4 headings">SERVICES</h4>
+				<h1 class="headings">SERVICES</h1>
+				<br>
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="card" style="max-width: 26rem;">
-  								<img src="assets/5.jpg" class="card-img-top" alt="...">
+						<div class="col-sm-6">
+							<div class="card" style="max-width: 40rem;">
+  								<img src="assets/ongrid.jpg" class="card-img-top img-fluid" alt="...">
   								<div class="card-body">
-    								<h5 class="card-title">SERVICE 1</h5>
-    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    								<h5 class="card-title">ON GRID INSTALLATION</h5>
   								</div>
 							</div>
+							<br>
 						</div>
-						<div class="col-sm-4">
-							<div class="card" style="max-width: 26rem;">
-  								<img src="assets/5.jpg" class="card-img-top" alt="...">
+						<div class="col-sm-6">
+							<div class="card" style="max-width: 40rem;">
+  								<img src="assets/ofgrid.jpg" class="card-img-top img-fluid" alt="...">
   								<div class="card-body">
-    								<h5 class="card-title">SERVICE 2</h5>
-    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    								<h5 class="card-title">OF GRID INSTALLATION</h5>
   								</div>
 							</div>
+							<br>
 						</div>
-						<div class="col-sm-4">
-							<div class="card" style="max-width: 26rem;">
-  								<img src="assets/5.jpg" class="card-img-top" alt="...">
+						<div class="w-100"></div>
+						<div class="col-sm-6">
+							<div class="card" style="max-width: 40rem;">
+  								<img src="assets/pump.png" class="card-img-top img-fluid" alt="...">
   								<div class="card-body">
-    								<h5 class="card-title">SERVICE 3</h5>
-    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    								<h5 class="card-title">SOLAR WATER PUMP</h5>
   								</div>
 							</div>
+							<br>
+						</div>
+						<div class="col-sm-6">
+							<div class="card" style="max-width: 40rem;">
+  								<img src="assets/led.jpeg" class="card-img-top img-fluid" alt="...">
+  								<div class="card-body">
+    								<h5 class="card-title">SOLAR LED INSTALLTION</h5>
+  								</div>
+							</div>
+							<br>
 						</div>
 				</div>
 			</div>
@@ -457,8 +489,8 @@
 			<div class="w-100"></div>
 			<div class="col-sm-12 text-center">
 				<br><br>
-				<h4 class="display-4 headings">PRODUCTS</h4><br>
-				<p class="lead">We have a vast experience as a leading power solutions specialist. Our expertise includes best components of Solar Power System.</p>	
+				<h1 class="headings">PRODUCTS</h1><br>
+				<p class="main-p">We have a vast experience as a leading power solutions specialist. Our expertise includes best components of Solar Power System.</p>	
 				<div class="container">
 				<div class="row">
 				<div class="col-sm-4">
@@ -552,7 +584,7 @@
 			<div class="w-100"></div>
 			<div class="col-sm-12 text-center">
 				<br><br>
-				<h4 class="display-4 headings">PROJECTS</h4>
+				<h1 class="headings" style="">PROJECTS</h1>
 				<br>
 			<div id="project-slide" class="carousel slide carousel-fade" data-ride="carousel" style="background-color: yellow;">
 				<ol class="carousel-indicators indicators">
@@ -578,7 +610,7 @@
 			<div class="w-100"></div>
 			<div class="col-sm-12 text-center clients">
 				<br><br>
-				<h4 class="display-4 headings">CLIENTS</h4>
+				<h1 class="headings">CLIENTS</h1>
 				<br>
 				<div id="client-slide" class="carousel slide carousel-fade" data-ride="carousel">
 					<ol class="carousel-indicators indicators">
@@ -611,7 +643,7 @@
 					<br><br>
 				<div class="row">
 				<div class="col-sm-12 map">
-				<h4 class="display-4 text-center headings">CONTACT</h4>
+				<h1 class="text-center headings">CONTACT</h1>
 				<br>
 							<div class="maps">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6070.29785537569!2d75.88438186826363!3d25.222751473829693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9a66f0833055%3A0xfe41d14ad19a11ec!2sKota%20Junction!5e0!3m2!1sen!2sin!4v1587527635779!5m2!1sen!2sin"></iframe>
@@ -677,8 +709,8 @@
 			<br><br>
 		   <div class="col-sm-12" style="background: #01579b">
 		   <footer>
-		   		<p class="lead" style="color: #ffffff; font-size: 1em; font-family: sans-serif; padding-top: 5px">© 2020 by Vidya Solar Solutions.</p>
-		   		<p class="lead" style="color: #ffffff; font-size: 0.65em; font-family: sans-serif;">Designed and Developed by <a href=""><strong>RAMAN DWIVEDI</strong></a></p>
+		   		<p style="color: #ffffff; font-size: 1em; font-family: sans-serif; padding-top: 5px">© 2020 by Vidya Solar Solutions.</p>
+		   		<p style="color: #ffffff; font-size: 0.65em; font-family: sans-serif;">Designed and Developed by <a href=""><strong>RAMAN DWIVEDI</strong></a></p>
 		   	</footer>	
 		   </div>
 		</div>	
